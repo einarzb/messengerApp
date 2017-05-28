@@ -5,7 +5,7 @@
 		<title>Messenger App</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAByayWYEm27wPfaEyV7lbqvKFYLvbXCMo"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC5hU9UX-3zti3kyykQ9dTLyI2KLrZhk3Q"></script>
 		<script type="text/javascript" src="angular/angular.js"></script>
 		<script type="text/javascript" src="angular-ui-router/release/angular-ui-router.js"></script>
 	</head>
@@ -21,6 +21,7 @@
 		    <div class="col-md-4 col-md-push-5">
 		     	 <form ng-submit="favDest(favDest)">
 		             <div class="input-group">
+                   <p>choose hot spot for urgent deliveries</p>
                    <input type="text" id="favDest" name="location" ng-autocomplete ng-model="favDest" options="options" details="details" ng-required="true" required class="form-control"
                      autocomplete="off" placeholder="Enter Your First Destionation">
 		                    <button type="submit" class="btn btn-danger">next</button>
@@ -33,8 +34,9 @@
         <div class="col-md-4 col-md-push-5">
 		      <form class="season-form" ng-submit="secondDest(secondDest)">
 		                <div class="input-group">
-		                    <input type="text" ng-model="secondDest" class="search form-control" placeholder="Enter Destination">
-		                    <button type="submit" class="btn btn-primary">next</button>
+                      <input type="text" id="secondDest" name="location" ng-autocomplete ng-model="secondDest" options="options" details="details" ng-required="true" required class="form-control"
+                        autocomplete="off" placeholder="Enter Your Second Destionation">
+                        <button type="submit" class="btn btn-primary">next</button>
 		                </div>
 		          </form>
 		      </div> <!-- end col -->
@@ -44,7 +46,8 @@
         <div class="col-md-4 col-md-push-5">
           <form class="season-form" ng-submit="thirdDest(thirdDest)">
                     <div class="input-group">
-                        <input type="text" ng-model="thirdDest" class="search form-control" placeholder="Enter Destination">
+                      <input type="text" id="thirdDest" name="location" ng-autocomplete ng-model="thirdDest" options="options" details="details" ng-required="true" required class="form-control"
+                        autocomplete="off" placeholder="Enter Your Third Destionation">
                         <button type="submit" class="btn btn-primary">next</button>
                     </div>
               </form>
@@ -55,7 +58,8 @@
         <div class="col-md-4 col-md-push-5">
           <form class="season-form" ng-submit="fourthDest(fourthDest)">
                     <div class="input-group">
-                        <input type="text" ng-model="fourthDest" class="search form-control" placeholder="Enter Destination">
+                      <input type="text" id="fourthDest" name="location" ng-autocomplete ng-model="fourthDest" options="options" details="details" ng-required="true" required class="form-control"
+                        autocomplete="off" placeholder="Enter Your fourth Destionation">
                         <button type="submit" class="btn btn-primary">next</button>
                     </div>
               </form>
@@ -66,7 +70,8 @@
         <div class="col-md-4 col-md-push-5">
           <form class="season-form" ng-submit="fifthDest(fifthDest)">
                     <div class="input-group">
-                        <input type="text" ng-model="fifthDest" class="search form-control" placeholder="Enter Destination">
+                      <input type="text" id="fifthDest" name="location" ng-autocomplete ng-model="fifthDest" options="options" details="details" ng-required="true" required class="form-control"
+                        autocomplete="off" placeholder="Enter Your Fifth Destionation">
                         <button type="submit" class="btn btn-primary">next</button>
                     </div>
               </form>

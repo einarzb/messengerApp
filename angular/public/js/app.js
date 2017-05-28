@@ -1,4 +1,4 @@
-var app = angular.module('messengerApp', ['ui.router']);
+var app = angular.module('messengerApp', ['ui.router','ngAutocomplete']);
 
 // app.config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 //   $urlRouterProvider.otherwise('home');

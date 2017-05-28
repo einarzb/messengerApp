@@ -5,6 +5,7 @@
 		<title>Messenger App</title>
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAByayWYEm27wPfaEyV7lbqvKFYLvbXCMo"></script>
 		<script type="text/javascript" src="angular/angular.js"></script>
 		<script type="text/javascript" src="angular-ui-router/release/angular-ui-router.js"></script>
 	</head>
@@ -20,7 +21,8 @@
 		    <div class="col-md-4 col-md-push-5">
 		     	 <form ng-submit="favDest(favDest)">
 		             <div class="input-group">
-		                    <input type="text" ng-model="favDest" class="find form-control" placeholder="Enter Your First Destionation">
+                   <input type="text" id="favDest" name="location" ng-autocomplete ng-model="favDest" options="options" details="details" ng-required="true" required class="form-control"
+                     autocomplete="off" placeholder="Enter Your First Destionation">
 		                    <button type="submit" class="btn btn-danger">next</button>
 		                </div>
 		          </form> <br>
@@ -90,6 +92,7 @@
 			</div>
 
 	<!--scripts-->
+
   <script src="ng-autocomplete/src/ngAutocomplete.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
